@@ -1,0 +1,30 @@
+h4{
+    color: blue;
+}
+.userInfo{
+    background-image:linear-gradient(to right, rgb(191, 224, 247), rgb(109, 155, 253));
+    width: 100%;
+}
+.blockPhoto{
+    background-color: coral;
+}
+.blockInfoUser{
+    display: flex;
+    flex-direction: column-reverse;
+    width:100%;
+}
+.content{
+    background-image:linear-gradient(to right, rgb(103, 121, 134), rgb(57, 81, 134));
+}
+.liste{
+    background-image:linear-gradient(to right, rgb(103, 121, 134), rgb(57, 81, 134));
+}
+.item{
+    background-image:linear-gradient(to right, rgb(103, 121, 134), rgb(57, 81, 134));
+}
+.item-native{
+    background-image:linear-gradient(to right, rgb(103, 121, 134), rgb(57, 81, 134));
+}
+.logochatte{
+    max-height: 50px;
+}

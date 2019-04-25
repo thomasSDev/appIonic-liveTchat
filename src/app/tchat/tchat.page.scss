@@ -1,0 +1,19 @@
+h4{
+    color: blue;
+}
+#zoneTexte{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.userMessage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgb(182, 182, 207), rgb(160, 103, 226));
+}
+.logochatte{
+    max-height: 50px;
+}
+

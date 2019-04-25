@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Utilisateurs   <img class="logochatte" src="../../assets/images/logoChatte.jpg"></ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content calss="content">
+  <ion-list-header>
+    Liste des utilisateurs sur TATCHAT
+  </ion-list-header>
+  <ion-list class="liste">
+    <ion-item class="item" *ngFor="let client of listeClient">
+      <div class="blockInfoUser">
+          <div class="userInfo">
+            <h4>{{client.username}}</h4>
+            <p>Date d'inscription : {{client.date | date: 'le dd/MM/yyyy à HH:mm '}}</p>
+          </div>
+      </div>    
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Inscription
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="ion-padding">
+        <ion-item>
+          <ion-input [(ngModel)]="username" placeholder="Votre pseudo"></ion-input>
+        </ion-item>  
+        <ion-item>
+          <ion-input [(ngModel)]="password" type="password"  placeholder="Mot de passe"></ion-input>
+        </ion-item>  
+        <ion-item>
+          <ion-input [(ngModel)]="confirmPassword" type="password"  placeholder="Confirmez votre mot de passe"></ion-input>
+        </ion-item> 
+        <ion-button expand="block" (click)="signup()">Inscription</ion-button>
+        <ion-button expand="block" routerLink="../home">Revenir à la connexion</ion-button>
+    </div>
+  </ion-content>
+  

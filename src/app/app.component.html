@@ -1,3 +1,37 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+    <ion-menu contentId="content1" side="start">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+          <ion-card>
+            <ion-item [routerLink]="['/client']" class="activated">
+              <ion-icon name="people" slot="start"></ion-icon>
+              <ion-label>Utilisateurs</ion-label>
+              <ion-button fill="outline" slot="end">Go !</ion-button>
+            </ion-item>
+          
+            <ion-card-content>
+              Découvrez avec qui vous communiquez et apprenez-en plus sur leur profil
+            </ion-card-content>
+          </ion-card>
+      
+          <ion-card>
+              <ion-item [routerLink]="['/tchat']" class="activated">
+                <ion-icon name="car" slot="start"></ion-icon>
+                <ion-label>Tchat</ion-label>
+                <ion-button fill="outline" slot="end">Go !</ion-button>
+              </ion-item>
+              <ion-card-content>
+                Accédez directement au tchat et faites vous des milliers d'amis !
+              </ion-card-content>
+            </ion-card>
+            <ion-button color="primary" (click)="disconnect($event)" class="buttonDisconnect" style="width: 99%;">
+              Quitter la ménagerie
+            </ion-button>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+  </ion-app>
